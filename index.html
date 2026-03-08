@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>С Днём Рождения, Илона!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: #fff;
+    }
+
+    body {
+      background: linear-gradient(rgba(0,20,50,0.4), rgba(0,20,50,0.4)),
+                  url('more.webp') center center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .layout {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      width: 100%;
+      max-width: 1100px;
+      padding: 20px;
+    }
+
+    /* === ФОТО — не обрезаем === */
+    .photo {
+      border-radius: 14px;
+      border: 2px solid rgba(212,175,106,0.7);
+      box-shadow: 0 10px 35px rgba(0,0,0,0.6);
+      display: block;
+      object-fit: contain;   /* не обрезаем */
+      background: transparent;
+      max-height: 80vh;
+      width: auto;
+      max-width: 220px;
+    }
+
+    /* === ЦЕНТР === */
+    .center {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      flex-shrink: 0;
+      width: 420px;
+    }
+
+    .sparkles {
+      color: #f5e0a0;
+      letter-spacing: 12px;
+      font-size: 1.1rem;
+    }
+
+    .subtitle {
+      font-style: italic;
+      font-size: 1.4rem;
+      color: #a8e6f0;
+      letter-spacing: 4px;
+    }
+
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 6.5rem;
+      font-weight: 700;
+      letter-spacing: 6px;
+      line-height: 1;
+      background: linear-gradient(135deg, #fff 20%, #f5e0a0 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 20px rgba(212,175,106,0.9));
+    }
+
+    .bigdate {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 2rem;
+      color: #f5e0a0;
+      text-shadow: 0 2px 14px rgba(212,175,106,0.9);
+    }
+
+    .poem {
+      background: rgba(255,255,255,0.13);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 16px;
+      padding: 22px 28px;
+      font-style: italic;
+      font-size: 1.25rem;
+      line-height: 2;
+      color: #fdf8f0;
+      width: 100%;
+    }
+
+    .wish {
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #f5e0a0;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="layout">
+
+    <!-- Левое фото -->
+    <img src="i1.png" class="photo" alt=""/>
+
+    <!-- Центр -->
+    <div class="center">
+      <div class="sparkles">✦ ✧ ✦</div>
+      <p class="subtitle">Дорогая подруга</p>
+      <h1 class="name">Илона</h1>
+      <p class="bigdate">С Днём Рождения!</p>
+      <div class="poem">
+        🌹 Пусть восхищает каждое мгновение,<br/>
+        удачей радует, приятно удивляет,<br/>
+        всегда чудесным будет настроение,<br/>
+        и близкие любовью согревают! 🌹
+      </div>
+      <p class="wish">Море счастья и бесконечное лето в душе! 🌊💕</p>
+      <div class="sparkles">✦ ✧ ✦</div>
+    </div>
+
+    <!-- Правое фото -->
+    <img src="il.png" class="photo" alt=""/>
+
+  </div>
+
+</body>
+</html>

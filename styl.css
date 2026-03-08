@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+  .container {
+    gap: 36px;
+    padding: 24px 14px 60px;
+  }
+
+  .card-section {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .photo {
+    width: 200px;
+    height: 245px;
+  }
+
+  .poem-box {
+    max-width: 100%;
+    padding: 26px 20px;
+  }
+
+  .poem {
+    font-size: 1.1rem;
+    line-height: 1.85;
+  }
+
+  .wish-card {
+    padding: 32px 20px;
+  }
+}
